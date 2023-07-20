@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct Home: View {
+    
+    init(){
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack(spacing: 0){
+            Drawer()
+            
+            TabView {
+                
+                Text("Home")
+                
+            }
+            .frame(width: UIScreen.main.bounds.width)
+        }
+        .frame(width: UIScreen.main.bounds.width)
+        
+        // MOVING VIEW
+        .offset(x: 125)
     }
 }
-
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+//            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -11,6 +11,8 @@
 		FE252D9F2A69A5B800884107 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE252D9E2A69A5B800884107 /* ContentView.swift */; };
 		FE252DA12A69A5B900884107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE252DA02A69A5B900884107 /* Assets.xcassets */; };
 		FE252DA52A69A5B900884107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE252DA42A69A5B900884107 /* Preview Assets.xcassets */; };
+		FE252DB02A69AB5500884107 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE252DAF2A69AB5500884107 /* Home.swift */; };
+		FE252DB22A69AB9100884107 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE252DB12A69AB9100884107 /* Drawer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		FE252DA02A69A5B900884107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE252DA22A69A5B900884107 /* NavigationDrawer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationDrawer.entitlements; sourceTree = "<group>"; };
 		FE252DA42A69A5B900884107 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE252DAF2A69AB5500884107 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FE252DB12A69AB9100884107 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,9 @@
 		FE252D9B2A69A5B800884107 /* NavigationDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				FE252DAD2A69AB2800884107 /* ViewModel */,
+				FE252DAC2A69AB1E00884107 /* View */,
+				FE252DAB2A69AB0500884107 /* Model */,
 				FE252D9C2A69A5B800884107 /* NavigationDrawerApp.swift */,
 				FE252D9E2A69A5B800884107 /* ContentView.swift */,
 				FE252DA02A69A5B900884107 /* Assets.xcassets */,
@@ -67,6 +74,29 @@
 				FE252DA42A69A5B900884107 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE252DAB2A69AB0500884107 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE252DAC2A69AB1E00884107 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE252DAF2A69AB5500884107 /* Home.swift */,
+				FE252DB12A69AB9100884107 /* Drawer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE252DAD2A69AB2800884107 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE252DB22A69AB9100884107 /* Drawer.swift in Sources */,
 				FE252D9F2A69A5B800884107 /* ContentView.swift in Sources */,
+				FE252DB02A69AB5500884107 /* Home.swift in Sources */,
 				FE252D9D2A69A5B800884107 /* NavigationDrawerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

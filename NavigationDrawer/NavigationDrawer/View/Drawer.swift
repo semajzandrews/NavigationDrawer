@@ -23,15 +23,22 @@ struct Drawer: View {
                 Spacer()
                 
             }
+            .padding()
+            
+            
+            Spacer()
         }
         .frame(width: 250)
-        .background(Color("drawerBG"))
+        .background(
+            Color("drawerBG")
+                .ignoresSafeArea(.all, edges: .vertical)
+        )
         
     }
 }
 
 struct Drawer_Previews: PreviewProvider {
     static var previews: some View {
-        Drawer()
+        Home()
     }
 }
