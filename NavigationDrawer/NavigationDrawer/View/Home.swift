@@ -39,5 +39,10 @@ struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
 //            .previewInterfaceOrientation(.landscapeLeft)
+            .previewDisplayName("iPhone 14")
+        Home()
+            .previewDisplayName("iPad Pro 12.9-inch (latest)")
+            .previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)"))
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

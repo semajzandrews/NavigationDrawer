@@ -46,15 +46,17 @@ struct Drawer: View {
             .padding(.horizontal)
             .padding(.top, 5)
             
-            Group {
+            VStack(spacing: 22) {
                 
-                MenuButton(name: "Catalogue", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                MenuButton(name: "Catalogue", image: "envelope.fill", selectedMenu: $menuData.selectedMenu, animation: animation)
                 
-                MenuButton(name: "Your Cart", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                MenuButton(name: "Your Cart", image: "bag.fill", selectedMenu: $menuData.selectedMenu, animation: animation)
                 
-                MenuButton(name: "Favorites", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                MenuButton(name: "Favorites", image: "envelope.fill", selectedMenu: $menuData.selectedMenu, animation: animation)
                 
-                MenuButton(name: "Your Orders", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                MenuButton(name: "Your Orders", image: "suit.heart.fill", selectedMenu: $menuData.selectedMenu, animation: animation)
+                
+//                MenuButton(name: "Your Orders", image: "list.triangle", selectedMenu: $menuData.selectedMenu, animation: animation)
                 
             }
             .padding(.leading)

@@ -17,7 +17,12 @@ struct MenuButton: View {
     
     var body: some View {
         
-        Button(action: {}, label: {
+        Button(action: {
+            
+            withAnimation(.spring()){
+                selectedMenu = name
+            }
+        }, label: {
             
             HStack(spacing: 15){
                 
