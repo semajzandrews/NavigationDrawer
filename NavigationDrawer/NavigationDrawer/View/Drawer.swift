@@ -10,6 +10,7 @@ import SwiftUI
 struct Drawer: View {
     
     @EnvironmentObject var menuData: MenuViewModel
+    @Namespace var animation
     
     var body: some View {
         
@@ -45,8 +46,20 @@ struct Drawer: View {
             .padding(.horizontal)
             .padding(.top, 5)
             
-            MenuButton(name: "Catalogue", image: "envelope", selectedMenu: $menuData.selectedMenu)
-                .padding(.top, 30)
+            Group {
+                
+                MenuButton(name: "Catalogue", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                
+                MenuButton(name: "Your Cart", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                
+                MenuButton(name: "Favorites", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                
+                MenuButton(name: "Your Orders", image: "envelope", selectedMenu: $menuData.selectedMenu, animation: animation)
+                
+            }
+            .padding(.leading)
+            .frame(width: 250, alignment: .leading)
+            .padding(.top, 20)
             
             Spacer()
         }

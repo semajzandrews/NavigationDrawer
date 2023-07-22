@@ -13,6 +13,8 @@ struct MenuButton: View {
     
     @Binding var selectedMenu: String
     
+    var animation: Namespace.ID
+    
     var body: some View {
         
         Button(action: {}, label: {
@@ -26,9 +28,23 @@ struct MenuButton: View {
                 Text(name)
                     .foregroundColor(selectedMenu == name ? .black : .white)
             }
+            .padding(.horizontal)
             .padding(.vertical, 12)
-            .frame(width: 200)
-            .background(Color.white.opacity(selectedMenu == name ? 1 : 0))
+            .frame(width: 200, alignment: .leading)
+            .background(
+            
+                ZStack {
+                    if selectedMenu == name {
+                        Color.white
+                            .cornerRadius(10)
+                            .matchedGeometryEffect(id: "TAB", in: animation)
+                    }
+                    else {
+                        Color.clear
+                    }
+                }
+            )
+            .cornerRadius(10)
             
         })
         
