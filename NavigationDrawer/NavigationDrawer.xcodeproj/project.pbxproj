@@ -13,6 +13,8 @@
 		FE252DA52A69A5B900884107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE252DA42A69A5B900884107 /* Preview Assets.xcassets */; };
 		FE252DB02A69AB5500884107 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE252DAF2A69AB5500884107 /* Home.swift */; };
 		FE252DB22A69AB9100884107 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE252DB12A69AB9100884107 /* Drawer.swift */; };
+		FEBF66342A6C26F100073AC8 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBF66332A6C26F100073AC8 /* MenuButton.swift */; };
+		FEBF66362A6C296800073AC8 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBF66352A6C296800073AC8 /* MenuModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FE252DA42A69A5B900884107 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE252DAF2A69AB5500884107 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FE252DB12A69AB9100884107 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		FEBF66332A6C26F100073AC8 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		FEBF66352A6C296800073AC8 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				FE252DAF2A69AB5500884107 /* Home.swift */,
 				FE252DB12A69AB9100884107 /* Drawer.swift */,
+				FEBF66332A6C26F100073AC8 /* MenuButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		FE252DAD2A69AB2800884107 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FEBF66352A6C296800073AC8 /* MenuModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 			files = (
 				FE252DB22A69AB9100884107 /* Drawer.swift in Sources */,
 				FE252D9F2A69A5B800884107 /* ContentView.swift in Sources */,
+				FEBF66362A6C296800073AC8 /* MenuModel.swift in Sources */,
+				FEBF66342A6C26F100073AC8 /* MenuButton.swift in Sources */,
 				FE252DB02A69AB5500884107 /* Home.swift in Sources */,
 				FE252D9D2A69A5B800884107 /* NavigationDrawerApp.swift in Sources */,
 			);

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Drawer: View {
+    
+    @EnvironmentObject var menuData: MenuViewModel
+    
     var body: some View {
         
         VStack {
@@ -25,6 +28,25 @@ struct Drawer: View {
             }
             .padding()
             
+            VStack(alignment: .leading, spacing: 10, content: {
+                
+                Text("Hello")
+                    .font(.title2)
+                
+                Text("Jenna Ezarik")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                
+                
+                
+            })
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal)
+            .padding(.top, 5)
+            
+            MenuButton(name: "Catalogue", image: "envelope", selectedMenu: $menuData.selectedMenu)
+                .padding(.top, 30)
             
             Spacer()
         }

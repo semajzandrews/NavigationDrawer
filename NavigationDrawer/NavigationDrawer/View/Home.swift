@@ -13,11 +13,13 @@ struct Home: View {
         UITabBar.appearance().isHidden = true
     }
     
+    @StateObject var menuData = MenuViewModel()
+    
     var body: some View {
         
         HStack(spacing: 0){
             Drawer()
-            
+    
             TabView {
                 
                 Text("Home")
@@ -29,6 +31,8 @@ struct Home: View {
         
         // MOVING VIEW
         .offset(x: 125)
+        
+        .environmentObject(menuData)
     }
 }
 struct Home_Previews: PreviewProvider {
